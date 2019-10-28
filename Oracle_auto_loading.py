@@ -12,11 +12,11 @@ import csv
 # Set up the connection and the target database/schema
 # Note: type 'sudo hostname <hostname>' in terminal to match your host name with the name in /etc/hosts file temporarily if getting 'ORA-21561: OID generation failed' error.
 # Close the excel files opened that are going to be used in this program when seeing: XLRDError: Unsupported format, or corrupt file: Expected BOF record; found b'\x08user168' 
-username = 'MASY_LC4013'
-password = 'MASY_LC4013'
-server_ip = 'localhost:1522'
-service_name = 'app12c'
-DB = 'MASY_LC4013'
+username = ''
+password = ''
+server_ip = ''
+service_name = ''
+DB = ''
 # Define a function to confirm drop
 def confirm_bef_drop(prompt, complaint='yes or no, please'): #complaint:key argument, 'Yes or no, please!': positional argument
     while True:
@@ -110,14 +110,14 @@ import csv
 # Set up the connection and the target database/schema
 # Note: type 'sudo hostname <hostname>' in terminal to match your host name with the name in /etc/hosts file temporarily if getting 'ORA-21561: OID generation failed' error.
 # Close the excel files opened that are going to be used in this program when seeing: XLRDError: Unsupported format, or corrupt file: Expected BOF record; found b'\x08user168' 
-username = 'MASY_LC4013'
-password = 'MASY_LC4013'
-server_ip = 'localhost:1522'
-service_name = 'app12c'
-DB = 'MASY_LC4013'
+username = ''
+password = ''
+server_ip = ''
+service_name = ''
+DB = ''
 #
-staged_tables = ['HR_DATA']
-target_tables = [['LC_JOB', 'LC_JOB_HISTORY', 'LC_LOCATION', 'LC_REGION', 'LC_EMPLOYEE', 'LC_DEPARTMENT', 'LC_COUNTRY']]
+staged_tables = ['staged_table_name']
+target_tables = [['table1', 'table2', 'table3', 'table4', 'table5', 'table6', 'table7']]
 insert_dic = dict(list(zip(staged_tables, target_tables)))
 # Define a function to confirm drop
 def confirm_bef_drop(prompt, complaint='yes or no, please'): #complaint:key argument, 'Yes or no, please!': positional argument
